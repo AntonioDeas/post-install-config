@@ -6,10 +6,6 @@
 This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -22,11 +18,17 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+
+- Log into the Admin/Analyst Panel.
+- Identify differences between Agent Panel and Admin Panel.
+- Set up Roles to define agent permissions.
+- Create Departments to manage ticket visibility.
+- Establish Teams by grouping agents across departments.
+- Configure user settings for ticket creation rules.
+- Add Agents to handle tickets.
+- Add Users to submit tickets.
+- Define SLAs for ticket response times.
+- Create Help Topics for ticket categorization.
 
 <h2>Configuration Steps</h2>
 
