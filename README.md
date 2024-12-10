@@ -18,6 +18,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
+- Log into the Admin/Analyst Panel
 - Set up Roles
 - Create Departments
 - Establish Teams
@@ -26,7 +27,16 @@ This tutorial outlines the post-install configuration of the open-source help de
 - Add Users
 - Define SLAs
 - Create Help Topics
-  
+
+<h2>Log into Panel</h2>
+
+<p>
+  <img width="500" alt="Screen Shot 2024-12-09 at 11 43 26 PM" src="https://github.com/user-attachments/assets/61eeee0d-da98-44ba-a1f6-83bf8d08dcfd">
+
+</p>
+<p>
+I accessed the Admin Panel at http://localhost/osTicket/scp/login.php using the credentials set during installation. This panel allows me to configure and manage the system.</p>
+<br />
 
 <h2>Set up Roles</h2>
 
@@ -39,7 +49,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I navigated to Admin Panel -> Agents -> Roles and created a new role, "Supreme Admin." Here, I defined what agents can view or do within the system, grouping permissions by job function.
 </p>
 <br />
 
@@ -51,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I went to Admin Panel -> Agents -> Departments to set up departments like "SysAdmins." Each department was configured to manage tickets related to specific areas of responsibility.
 </p>
 <br />
 
@@ -63,7 +73,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Using Admin Panel -> Agents -> Teams, I created a team called "Online Banking" by pulling agents from different departments. Teams help improve collaboration across departmental boundaries.
 </p>
 <br />
 
@@ -74,7 +84,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I adjusted settings in Admin Panel -> Settings -> User Settings to control how users submit tickets. I unchecked the option for unregistered users to create tickets, requiring registration and login for ticket submissions.
 </p>
 <br />
 
@@ -91,7 +101,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I went to Admin Panel -> Agents -> Add New and created accounts for agents like Jane (SysAdmins) and John (Support). I assigned each agent to their respective department for ticket management.
 </p>
 <br />
 
@@ -104,7 +114,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Agent Panel -> Users -> Add New, I created user accounts for customers like Karen and Ken. This setup allows them to submit tickets through the end-user interface at http://localhost/osTicket.
 </p>
 <br />
 
@@ -118,8 +128,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+I configured SLAs in Admin Panel -> Manage -> SLA, defining response times based on urgency:
+- Sev-A: 1-hour grace period, 24/7 schedule.
+- Sev-B: 4-hour grace period, 24/7 schedule.
+- Sev-C: 8-hour grace period, business hours only.</p>
 <br />
 
 <h2>Create Help Topics</h2>
@@ -134,6 +146,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I navigated to Admin Panel -> Manage -> Help Topics and set up categories like "Business Critical Outage," "Password Reset," and "Equipment Request." These help users select the appropriate category when submitting tickets, streamlining issue identification.
+
 </p>
 <br />
